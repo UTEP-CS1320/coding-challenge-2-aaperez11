@@ -1,12 +1,3 @@
-/*
-*   CODING CHALLENGE #2
-*   Filename: main.c
-*   This file measures a person's blood pressure readings and reports their category.
-*   Last modified by: Angel F. Garcia (9/19/2020)
-*   
-*   Check the // TODO comments to see what is missing and needs to be completed.
-*/
-
 #include <stdio.h>
 
 int main(void) {
@@ -16,9 +7,26 @@ int main(void) {
   scanf("%d %d", &s, &d);
 
   // TODO: Complete the rest of the categories
-  if(s < 120) {
-    if(d < 80) {
-      printf("Normal\n");
+  if(s < 140) {
+    if(d < 90) {
+      printf("Stage 2 Hypertension\n");
     }
   }
+if(s < 120){
+  if(d < 80){
+    printf("Normal\n");
+  }  }
+  if(s >180)
+    if(d > 120){
+  printf("Hypertensive Crysis\n");
+    }
 }
+if(s >120 && s <129){
+if(s >80){
+  printf("Elevated\n");
+  }
+}
+if(s >130 && s <139){
+  if(d >80 && d <89){
+    printf("stage 1 Hypertension\n");
+  }
