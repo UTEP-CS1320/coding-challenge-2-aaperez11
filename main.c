@@ -1,25 +1,51 @@
 #include <stdio.h>
 
-int main(void) {
-  int s, d;
+int main() 
+{
+int sys, dia;
 
-  // Read Systolic and Diastolic pressure
-  scanf("%d %d", &s, &d);
+  
 
-  // TODO: Complete the rest of the categories
-  if((s > 140)||(d >=90)) {
-      printf("Stage 2 Hypertension\n");
-    }else if (s< 120){
-  if(d < 80){
-    printf("Normal\n");
-  }  }else if ((s > 180)||(d >= 120)){
-  printf("Hypertensive Crysis\n");
-else if(s >120 && s <129){
-if(d >80){
-  printf("Elevated\n");
+  printf(input your systolic pressure\n");
+  scanf("%d", &sys);
+
+  printf("input your diastolic pressure\n");
+  scanf("%d", &dia);
+
+
+
+  if(sys < dia)
+  {
+    printf("error");
+    return 0;
   }
-}else if ((s >130 && s< 139)||(d >=80 && d<89)){
-  printf("stage 1 Hypertension\n");
-  }
-  }
-             
+
+
+
+
+  if(sys <120 && dia <80)
+  printf("normal  blood pressure\n");
+
+
+
+
+
+  else if(sys >= 120 && sys <= 129 && dia < 80)
+  printf("elevated blood pressure\n");
+
+
+
+
+  else if(( sys>=130 && sys >= 139)||( dia >= 80 && dia <=89))
+
+
+
+
+  else
+  {
+    printf("stage - 2 hypertension\n");
+    if(sys > 180 || dia > 120)
+        printf( "HYPERTENSIVE CRISIS AS WELL!!\n");
+    }
+    return 0;
+}
